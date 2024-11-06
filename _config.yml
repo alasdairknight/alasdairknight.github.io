@@ -89,3 +89,8 @@ exclude:
   - switch_theme.sh
   - tags
   - Rakefile
+
+collections:
+  trips:
+    output: true
+    permalink: /:collection/:title/
