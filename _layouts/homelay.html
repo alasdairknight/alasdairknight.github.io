@@ -2,10 +2,22 @@
 layout: default
 ---
 
-  <div id="homeid" class="col-sm-7 col-xs-12">
-	{{ content }}
+<div class="container-fluid">
+  <!-- Full-width Carousel at the Top -->
+  <div class="row">
+    <div id="carouselsid" class="col-12">
+      {% include carousel.html height="50" unit="%" duration="7" number="1" %}
+    </div>
   </div>
   
-  <div id="newsid" class="col-sm-5 col-xs-12" >
-	{% include sidebar.html %}
+  <!-- Main Content and Sidebar Below Carousel -->
+  <div class="row">
+    <div id="homeid" class="col-md-8 col-xs-12">
+      {{ content }}
+    </div>
+
+    <div id="newsid" class="col-md-4 col-xs-12">
+      {% include sidebar.html %}
+    </div>
   </div>
+</div>

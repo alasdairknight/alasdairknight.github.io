@@ -24,7 +24,7 @@
   --teal: #20c997;
   --cyan: #3498db;
   --white: #fff;
-  --gray: #888;
+  --gray: #9d5656;
   --gray-dark: #303030;
   --primary: #375a7f;
   --secondary: #444;
@@ -33,7 +33,7 @@
   --warning: #f39c12;
   --danger: #e74c3c;
   --light: #adb5bd;
-  --dark: #303030;
+  --dark: #de0f0f;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -54,7 +54,7 @@ html {
   font-family: sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: rgba(35, 35, 35, 0);
 }
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
@@ -67,9 +67,9 @@ body {
   font-size: 0.9375rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #fff;
+  color: #1a1a1a;
   text-align: left;
-  background-color: #222;
+  background-color: #d1d1d1;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -162,13 +162,13 @@ sup {
 }
 
 a {
-  color: #00bc8c;
+  color: #c98826;
   text-decoration: none;
   background-color: transparent;
 }
 
 a:hover {
-  color: #007053;
+  color: #1d7aea;
   text-decoration: underline;
 }
 
@@ -427,7 +427,7 @@ hr {
   margin-top: 1rem;
   margin-bottom: 1rem;
   border: 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(250, 240, 240, 0.1);
 }
 
 small,
@@ -487,7 +487,7 @@ mark,
 
 .img-thumbnail {
   padding: 0.25rem;
-  background-color: #222;
+  background-color: #726e6e;
   border: 1px solid #dee2e6;
   border-radius: 0.25rem;
   max-width: 100%;
@@ -522,7 +522,7 @@ kbd {
   padding: 0.2rem 0.4rem;
   font-size: 87.5%;
   color: #fff;
-  background-color: #222;
+  background-color: #7e7979;
   border-radius: 0.2rem;
 }
 
@@ -1898,7 +1898,7 @@ pre code {
 
 .table-hover tbody tr:hover {
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.075);
+  background-color: rgba(198, 0, 0, 0.075);
 }
 
 .table-primary,
@@ -4535,7 +4535,7 @@ input[type="button"].btn-block {
 }
 
 .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
-  border-color: #444 #444 transparent;
+  border-color: #b8b6b3 #444 transparent;
 }
 
 .nav-tabs .nav-link.disabled {
@@ -5000,7 +5000,7 @@ input[type="button"].btn-block {
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: rgba(255, 255, 255, 0.6);
+  color: #d1d1d1;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
@@ -5602,7 +5602,7 @@ a.badge-dark:focus, a.badge-dark.focus {
 .jumbotron {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
-  background-color: #303030;
+  background-color: #aaaaaa;
   border-radius: 0.3rem;
 }
 
