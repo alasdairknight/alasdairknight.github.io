@@ -2,6 +2,9 @@
 layout: default
 ---
 
-<div id="gallerysid">
-    {% include image-gallery.html folder="/uploads/album" %}
-</div>
+<div class="container">
+    <h1>{{ page.title }}</h1>
+    <div class="image-gallery">
+      {% include gallery.html %}
+    </div>
+  </div>

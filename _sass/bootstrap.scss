@@ -10973,3 +10973,29 @@ a.text-dark:hover, a.text-dark:focus {
 .list-group-item-action .list-group-item-heading {
   color: #fff;
 }
+
+/* Gallery layout */
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.image-gallery a {
+  width: 20%;
+  margin-bottom: 10px;
+  overflow: hidden; /* Ensures images stay within their container */
+  display: block;
+}
+
+.image-gallery img {
+  width: 100%; /* Ensures the image takes the full width of its container */
+  height: 100px; /* Adjust the height as necessary */
+  object-fit: cover; /* Crops the image to fit the dimensions */
+  border-radius: 5px;
+}
+
+.image-gallery img:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}

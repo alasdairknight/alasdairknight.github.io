@@ -1,11 +1,12 @@
 ---
-title: "Gallery"
-layout: homelay
-sitemap: false
-permalink: /
+layout: default
+title: Image Gallery
+permalink: /gallery/
 ---
 
-### Welcome
+## Research Trip Galleries
 
-Include photo gallery here
+Here are the image galleries for my research trips:
 
+### Nepal Research Trip
+Visit the [Nepal Research Trip Gallery]({{ site.baseurl }}/nepal).
