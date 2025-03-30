@@ -1,6 +1,6 @@
 # Site settings
 title: Alasdair Knight
-email: alasdair.knight@ox.ac.uk
+email: alasdair.knight@earth.ox.ac.uk
 description: Academic webpage of Alasdair Knight
 baseurl: ""
 url: ""
@@ -72,6 +72,7 @@ scholar:
 
   replace_strings: true
   join_strings: true
+  full-width: true
 
   details_dir: bibliography
   details_layout: bibtex.html

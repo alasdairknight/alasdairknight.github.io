@@ -1,17 +1,17 @@
 img { 
-    border-radius:5%;
+    border-radius:0%;
 }
 
 .jumbotron {
     padding:20px; 
     padding-bottom:7px; 
-    margin-top:22px; 
+    margin-top:0px; 
     margin-bottom:22px;
 }
 
 .navbar {
-  margin-bottom: 20px;
-  border-bottom: 4px solid var(--secondary);
+  margin-bottom: 0px;
+  border-bottom: 0px solid var(--secondary);
 }
 
 .btn {
@@ -20,7 +20,11 @@ img {
 }
 
 .container-fluid {
-  max-width: 800px;
+  width: 100% !important;
+  max-width: 100% !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin: 0 !important;
 }
 
 .container-footer {
