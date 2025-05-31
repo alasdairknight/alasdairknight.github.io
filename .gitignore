@@ -1,5 +1,7 @@
-tags
-_site/
+# Remove this line
+# _site/
+
+# Keep these as is
 .jekyll-cache/
 .sass-cache/
 .DS_Store

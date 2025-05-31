@@ -1,22 +1,24 @@
-name: Build and Deploy Jekyll with Plugins
+name: Build and Deploy Jekyll Site to /docs
 
 on:
   push:
     branches: [main]
 
 permissions:
-  contents: write  # Allows pushing to gh-pages branch
+  contents: write  # Needed to push commits back to main branch
 
 jobs:
-  jekyll-deploy:
+  build-deploy:
     runs-on: ubuntu-22.04
 
     steps:
-      - name: Checkout source
+      - name: Checkout repository
         uses: actions/checkout@v3
+        with:
+          persist-credentials: true  # Needed to push commits
 
       - name: Set up Ruby
-        uses: ruby/setup-ruby@v1.160.0
+        uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.1'
           bundler-cache: true
@@ -24,14 +26,13 @@ jobs:
       - name: Install dependencies
         run: bundle install
 
-      - name: Build the site with plugins
-        run: bundle exec jekyll build
+      - name: Build Jekyll site into docs/
+        run: bundle exec jekyll build -d docs
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_site
-          publish_branch: gh-pages
-          # keep_files: true  # optional; omit or set false for clean deploys
-          cname: alasdairknight.co.uk
+      - name: Commit and push built site to main branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs
+          git commit -m "Build site and deploy to /docs [skip ci]" || echo "No changes to commit"
+          git push origin main

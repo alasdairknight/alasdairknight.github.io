@@ -5,6 +5,7 @@ description: Academic webpage of Alasdair Knight
 baseurl: ""
 url: ""
 
+destination: docs
 # Google analytics ID: Uncomment and your own, if you like
 # google_analytics: XX
 # google_analytics_4: XXX
