@@ -5,7 +5,7 @@ on:
     branches: [main]
 
 permissions:
-  contents: write
+  contents: write  # Allows pushing to gh-pages branch
 
 jobs:
   jekyll-deploy:
@@ -24,7 +24,7 @@ jobs:
       - name: Install dependencies
         run: bundle install
 
-      - name: Build the site
+      - name: Build the site with plugins
         run: bundle exec jekyll build
 
       - name: Deploy to GitHub Pages
@@ -33,5 +33,5 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./_site
           publish_branch: gh-pages
-          keep_files: true
+          # keep_files: true  # optional; omit or set false for clean deploys
           cname: alasdairknight.co.uk
